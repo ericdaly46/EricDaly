@@ -1,22 +1,46 @@
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.*;
-public class GUI {
 
+public class GUI {
+	private JFrame frame;
+	   private JLabel headerLabel;
+	   private JLabel statusLabel;
+	   private JPanel controlPanel;
+	   
 	public static void main(String[] args) {
-		//JFrame frame = new JFrame("Game");
-		//frame.setSize(500,500);
-		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		///JButton button1 = new JButton("Press");
-		//frame.getContentPane().add(button1);
-		//frame.setVisible(true);
-	}
-	public static void createWindow() {
-		JFrame frame = new JFrame("Game");
-		frame.setSize(500,500);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		JButton button1 = new JButton("Press");
-		frame.getContentPane().add(button1);
-		frame.setVisible(true);
-	}
+		
 }
+	//Create Game UI with a background image
+	public void prepareGame() {
+		frame = new JFrame("Game Window");
+	      frame.setSize(1000,1000);
+	      frame.setLayout(new GridLayout(3, 1));
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      headerLabel = new JLabel("", JLabel.CENTER);
+	      statusLabel = new JLabel("",JLabel.CENTER);
+	      statusLabel.setBounds(100,100,200,200);
+	      controlPanel = new JPanel();
+	      controlPanel.setLayout(new FlowLayout());
+	      frame.add(headerLabel);
+	      frame.add(controlPanel);
+	      frame.add(statusLabel);
+	      try {
+	            frame.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("C:\\Users\\eldaly\\Downloads\\william.jpg")))));
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        frame.pack();
+	        frame.setVisible(true);
+	      frame.setVisible(true);
+	   }
+	
+	  
+	   }
+	   
+	 
+
+
+	
