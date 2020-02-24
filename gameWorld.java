@@ -1,26 +1,17 @@
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.*;
-
-public class gameWorld2 {
+public class gameWorld {
 	
+
 	public static void main(String[] args) {
 		
 
 	}
-	
 	
 	
 	public void setMain() {
@@ -28,10 +19,10 @@ public class gameWorld2 {
 		
 	}
 	//Create Game UI with a background image
-	public void prepareGame2() {
-		JFrame obj = new JFrame("World 2");
+	public void prepareGame() {
+		JFrame obj = new JFrame("World 1");
         JButton b3 = new JButton("Main Menu");
-        JLabel image = new JLabel(new ImageIcon("C:\\Users\\eldaly\\Downloads\\xqc.jpg"));
+        JLabel image = new JLabel(new ImageIcon("C:\\Users\\eldaly\\Downloads\\william.jpg"));
         image.setBounds(0,0, 1600, 1400);
         obj.setExtendedState(JFrame.MAXIMIZED_BOTH);
         obj.add(image);
@@ -47,8 +38,5 @@ public class gameWorld2 {
 	    });
         
 	   }
-		      
-		
-	}
-	
-	
+
+}

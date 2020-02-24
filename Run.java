@@ -5,7 +5,10 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 
 public class Run {
@@ -13,15 +16,14 @@ public class Run {
 	private JLabel headerLabel;
 	private JLabel statusLabel;
 	private JPanel controlPanel;
-	   //Makes program work idk
+	  //Makes program work idk
 	   public Run() {
-		   prepareGUI();
+		   mainMenu();
 	   }
 	   
 	//Main
 	public static void main(String[] args) {
-		Run swingControlDemo = new Run();
-		swingControlDemo.showButtonDemo();
+		new Run();
 
 	}
 	//Call to prepareGame in GUI
@@ -30,10 +32,24 @@ public class Run {
 		game.prepareGame();
 		
 	}
+	//Call to gmaeWorld2
 	public void setgame2() {
 		gameWorld2 game = new gameWorld2();
 		game.prepareGame();
 	}
+	public static void gameWorld()
+    {
+        JFrame obj = new JFrame("Banking Software");
+        JButton b1 = new JButton("Opening Account");
+        JLabel image = new JLabel(new ImageIcon("C:\\Users\\eldaly\\Downloads\\canes.jpg"));
+        image.setBounds(0,0, 1600, 1400);
+        obj.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        obj.add(image);
+        b1.setBounds(500,400, 200, 20);
+        image.add(b1);
+        
+        obj.setVisible(true);
+    }
 	
 	//Create a new JFrame and stlye it
 	public void prepareGUI(){
@@ -48,19 +64,33 @@ public class Run {
 	      frame.add(headerLabel);
 	      frame.add(controlPanel);
 	      frame.add(statusLabel);
-	      //try {
-	           // frame.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("C:\\Users\\eldaly\\Downloads\\canes.jpg")))));
-	       // } catch (IOException e) {
-	         //   e.printStackTrace();
-	       // }
-	      //  frame.pack();
-	      frame.setVisible(true);
+	      
+	      /**
+	      try {
+	            frame.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("C:\\Users\\eldaly\\Downloads\\canes.jpg")))));
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	       }
+	       **/
+	     
+	      //frame.pack();
+	      
 	   }
 	
 	
 	
 	//Display a button on the JFrame with a listener
 	 private void showButtonDemo(){
+		
+		 //try {
+	            //frame.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("C:\\Users\\eldaly\\Downloads\\canes.jpg")))));
+	      //  } catch (IOException e) {
+	           // e.printStackTrace();
+	     //  }
+		
+		 JLabel label = new JLabel();
+		 JLabel image = new JLabel(new ImageIcon("C:\\Users\\eldaly\\Downloads\\canes.jpg"));
+		 label.setLayout(new FlowLayout());
 	      JButton okButton = new JButton("World 1");
 	      JButton gameButton = new JButton("World 2");
 	      gameButton.setBounds(400, 400, 100, 100);
@@ -83,8 +113,9 @@ public class Run {
 	            
 	         
 	      });
-	      controlPanel.add(okButton);
-	      controlPanel.add(gameButton);
+	    	label.add(image);
+	      label.add(okButton);
+	      label.add(gameButton);
 	      frame.setVisible(true);
 	
 

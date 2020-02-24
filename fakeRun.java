@@ -1,22 +1,21 @@
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
-import javax.swing.*;
 
-public class GUI {
-	public GUI() {
-		mainMenu();
-	}
-	  
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+/**
+public class fakeRun {
+ public fakeRun() {
+	 mainMenu();
+ }
 	public static void main(String[] args) {
-		new GUI();
-}
-	
+		new fakeRun();
+
+	}
 	public void setGame() {
-		gameWorld game = new gameWorld();
+		GUI game = new GUI();
 		game.prepareGame();
 		
 	}
@@ -55,11 +54,5 @@ public class GUI {
 	      });
         
     }
-	
-	  
-	   }
-	   
-	 
-
-
-	
+}
+**/
