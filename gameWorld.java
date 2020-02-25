@@ -1,6 +1,5 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -15,7 +14,7 @@ public class gameWorld {
 	
 	
 	public void setMain() {
-		gameWorld main = new gameWorld();
+		GUI main = new GUI();
 		
 	}
 	//Create Game UI with a background image

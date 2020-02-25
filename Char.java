@@ -1,4 +1,8 @@
 
-public class Char {
-
+public class Char {{
+	
+	if (isKeyPressed.isWPressed()) {
+			
+}
+}
 }

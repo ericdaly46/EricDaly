@@ -1,29 +1,29 @@
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 
 public class GUI {
+	//Calls mainMenu to use as main
 	public GUI() {
 		mainMenu();
 	}
-	  
+	 
 	public static void main(String[] args) {
-		new GUI();
+		
 }
-	
+	//Calls to gameWorld to create world1
 	public void setGame() {
 		gameWorld game = new gameWorld();
 		game.prepareGame();
 		
 	}
+	//Calls to gameWorld2 to create world2
 	public void setGame2() {
 		gameWorld2 game = new gameWorld2();
 		game.prepareGame2();
 	}
+	
+	//Creates main frame with an Image and button listener
 	public void mainMenu() 
     {
         JFrame obj = new JFrame("Main Window");
@@ -38,8 +38,9 @@ public class GUI {
         image.add(b1);
         image.add(b2);
         obj.setVisible(true);
+        //Button Listeners
         b1.addActionListener(new ActionListener() {
-	         //When button is pressed close main window and create a game window
+	         //When button is pressed close main window and create game window1
 	    	  public void actionPerformed(ActionEvent e) {
 
 	    		  obj.setVisible(false);
@@ -47,7 +48,7 @@ public class GUI {
 	    	  }
 	      });
         b2.addActionListener(new ActionListener() {
-	         //When button is pressed close main window and create a game window
+	         //When button is pressed close main window and create game window2
 	    	  public void actionPerformed(ActionEvent e) {
 	    		  obj.setVisible(false);
 	            setGame2();

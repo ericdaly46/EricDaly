@@ -1,18 +1,10 @@
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import java.awt.Image;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.*;
 
 public class gameWorld2 {
 	
@@ -24,7 +16,7 @@ public class gameWorld2 {
 	
 	
 	public void setMain() {
-		gameWorld main = new gameWorld();
+		GUI main = new GUI();
 		
 	}
 	//Create Game UI with a background image
