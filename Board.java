@@ -28,7 +28,6 @@ public class Board extends JPanel implements ActionListener{
 	        addKeyListener(new TAdapter());
 	        setBackground(Color.BLACK);
 	        setFocusable(true);
-
 	        spaceShip = new Char(ICRAFT_X, ICRAFT_Y);
 
 	        timer = new Timer(DELAY, this);

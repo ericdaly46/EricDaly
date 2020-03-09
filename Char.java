@@ -40,19 +40,19 @@ public class Char extends Sprite {
 	        }
 
 	        if (key == KeyEvent.VK_LEFT) {
-	            dx = -1;
+	            dx = -10;
 	        }
 
 	        if (key == KeyEvent.VK_RIGHT) {
-	            dx = 1;
+	            dx = 10;
 	        }
 
 	        if (key == KeyEvent.VK_UP) {
-	            dy = -1;
+	            dy = -10;
 	        }
 
 	        if (key == KeyEvent.VK_DOWN) {
-	            dy = 1;
+	            dy = 10;
 	        }
 	    }
 
