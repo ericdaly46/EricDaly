@@ -1,0 +1,132 @@
+body{
+    background-color:black;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    color:yellow;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+}
+
+
+.left{
+    display: block;
+    margin-left: inherit;
+    margin-right: auto;
+    width:50%;
+}
+.right{
+    display: block;
+    margin-left: auto;
+    margin-right: inherit;
+    width:50;
+}
+.leftText{
+    display: block;
+    margin-left: inherit;
+    margin-right: auto;
+    width:40%;
+}
+.rightText{
+    display: block;
+    margin-left: auto;
+    margin-right: inherit;
+    width:40;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.teamIMG{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width 100%;
+}
+.yellow{
+    color:yellow;
+    
+    
+}
+
+a:hover{
+    height:10%;
+    width:10%;
+}
+.button {
+  background-color: grey; /* Green */
+  border: none;
+  color: yellow;
+  padding: 15px 32px;
+  
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    
+}
+
+#About{
+    text-align:left;
+}
+#Teams{
+    text-align: right;
+}
+
+table{
+   
+    border:2px;
+    font-size:16px;
+    background-color:grey;
+    border-style:double;
+    border-color:yellow;
+}
+
+th{
+border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+    color:yellow;
+    
+}
+tr{
+    color:white;
+}
+.content{
+     align-content: center;
+    width: 300px;
+  border: 15px solid yellow;
+  padding: 50px;
+  margin: 20px;
+    background-color:grey;
+    
+}
+
+
+#center{
+     display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+}
+
+img {
+  -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari */
+  filter: drop-shadow(8px 8px 10px gray);
+}
